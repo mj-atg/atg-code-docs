@@ -11,7 +11,7 @@ export function Callout({ title, children }) {
             display: flex;
             flex-direction: column;
             padding: 12px 16px;
-            background: #f6f9fc;
+            background: hsl(0, 0%, 8%);
             border: 1px solid #dce6e9;
             border-radius: 4px;
           }

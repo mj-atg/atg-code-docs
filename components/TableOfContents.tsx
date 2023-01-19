@@ -40,11 +40,12 @@ export function TableOfContents({toc}) {
             position: sticky;
             top: calc(2.5rem + var(--top-nav-height));
             max-height: calc(100vh - var(--top-nav-height));
-            flex: 0 0 auto;
+            flex: 0 0 300px;
             align-self: flex-start;
             margin-bottom: 1rem;
             padding: 0.5rem 0 0;
             border-left: 1px solid var(--border-color);
+            overflow: scroll;
           }
           ul {
             margin: 0;
@@ -53,6 +54,7 @@ export function TableOfContents({toc}) {
           li {
             list-style-type: none;
             margin: 0 0 1rem;
+            font-size: 0.9rem;
           }
           li :global(a) {
             text-decoration: none;
@@ -62,7 +64,9 @@ export function TableOfContents({toc}) {
             text-decoration: underline;
           }
           li.padded {
-            padding-left: 1rem;
+            padding-left: 2rem;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
           }
         `}
       </style>

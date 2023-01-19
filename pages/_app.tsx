@@ -6,8 +6,9 @@ import { SideNav, TableOfContents, TopNav } from '../components';
 
 import 'prismjs';
 // Import other Prism themes here
-import 'prismjs/components/prism-bash.min';
-import 'prismjs/themes/prism.css';
+import 'prismjs/components/prism-typescript.min';
+// import 'prismjs/themes/prism.css';
+import 'prismjs/themes/prism-twilight.css';
 
 import '../public/globals.css'
 
@@ -20,7 +21,7 @@ const DESCRIPTION = 'A powerful, flexible, Markdown-based authoring framework';
 function collectHeadings(node, sections = []) {
   if (node) {
     if (node.name === 'Heading') {
-      const title = node.children[0];
+      const title = node.children.map(c => (typeof c !== 'string') ? c.children : c).join(' ')
 
       if (typeof title === 'string') {
         sections.push({
@@ -72,7 +73,7 @@ export default function MyApp({ Component, pageProps }: AppProps<MyAppProps>) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TopNav>
-        <Link href="/docs">Docs</Link>
+        {/* <Link href="/docs">Docs</Link> */}
       </TopNav>
       <div className="page">
         <SideNav />

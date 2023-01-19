@@ -4,9 +4,7 @@ import Link from 'next/link';
 export function TopNav({children}) {
   return (
     <nav>
-      <Link href="/" className="flex">
-        Home
-      </Link>
+      <img src="/images/ATG-Logo-Red-low-res.jpeg" width="120" />
       <section>{children}</section>
       <style jsx>
         {`
@@ -20,7 +18,7 @@ export function TopNav({children}) {
             justify-content: space-between;
             gap: 1rem;
             padding: 1rem 2rem;
-            background: white;
+            background: hsl(0, 0%, 8%);
             border-bottom: 1px solid var(--border-color);
           }
           nav :global(a) {
