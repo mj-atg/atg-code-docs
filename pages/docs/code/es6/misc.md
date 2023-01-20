@@ -7,7 +7,7 @@ const obj = { name: "Haider", age: 22, class: 12 };
 console.log(JSON.stringify(obj, null, "\t"));
 ```
 
-## Swap Two Variables Without a Third one
+## Swap two variables without a third one
 
 ```ts
 let x = 1;
@@ -16,7 +16,7 @@ let y = 2;
 [x, y] = [y, x];
 ```
 
-## Nullish Coalescing for Shorter If-Else’s
+## Nullish coalescing for shorter If-Else conditional
 
 ```ts
 let maybeSomething;
@@ -29,7 +29,7 @@ else console.log("Nothing found");
 console.log(maybeSomething ?? "Nothing found");
 ```
 
-## Optional Chaining to Prevent Crashes
+## Optional chaining to prevent crashes
 
 ```ts
 const student = { name: "Matt", age: 27, address: { state: "New York" } };
@@ -41,7 +41,7 @@ console.log(student && student.address && student.address.ZIPCode); // Doesn't e
 console.log(student?.address?.ZIPCode); // Doesn't exist - Returns undefined
 ```
 
-## Use Bitwise operator to check for `-1` value
+## Use bitwise operator to check for `-1` value
 
 Both `Array#indexOf` and `Array#findIndex` return -1 if an element is absent from an array.
 
@@ -60,7 +60,7 @@ console.log(foundIndex(numbers.indexOf(5))); // true
 console.log(foundIndex(numbers.indexOf(8))); // false
 ```
 
-## Use Bitwise operator to check if number is Even or Odd
+## Use bitwise operator to check if number is even or odd
 
 The use of the `&` operator in checking for set bits for a decimal number can be extended to check whether a given decimal number is even or odd. To achieve this, `1` is used as the bit mask (to determine whether the first bit or rightmost bit is set).
 

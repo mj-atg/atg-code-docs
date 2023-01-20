@@ -81,7 +81,7 @@ export function isIterable(input: any): input is Iterable<any> {
 !!"";
 ```
 
-## Compress Multiple Conditions
+## Compress multiple conditions
 
 ```ts
 const num = 1;

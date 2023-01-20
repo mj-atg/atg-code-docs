@@ -1,6 +1,6 @@
 # ES6 - ByteSize Scripts - Math
 
-## Check if a Number is Positive or Negative
+## Check if a Number is positive or negative
 
 ```ts
 const positive = 5;

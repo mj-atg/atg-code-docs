@@ -1,6 +1,6 @@
 # ES6 - ByteSize Scripts - Object
 
-## Check if NaN is equal to NaN `@boolean,@object`
+## Check if NaN is equal to NaN
 
 ```ts
 const item = NaN;
@@ -44,7 +44,7 @@ hasNumber === NaN // returns false
 if(hasNumber === NaN) // ❌ again, you won’t be able to use this logic because this will always return false
 ```
 
-## Collect Object’s Values into an Array
+## Collect object’s values into an array
 
 ```ts
 const info = { name: "Matt", country: "Finland", age: 35 };

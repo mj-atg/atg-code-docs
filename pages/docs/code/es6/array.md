@@ -1,12 +1,12 @@
 # ES6 - ByteSize Scripts - Array
 
-## Get rid of Duplicates
+## Get rid of duplicates
 
 ```js
 const uniq = [...new Set([1, 1, 2, 3, 4, 4, 4, 5, 6, 7])];
 ```
 
-## Non-desctructive sorting
+## Non-destructive sorting
 
 ```ts
 const arr = ["F", "E", "D", "B", "C", "A"];
@@ -24,7 +24,7 @@ const arr1 = [...Array.from({ length: 5 }, (v, i) => i)];
 const arr2 = [...Array(5).keys()];
 ```
 
-## Random Selection
+## Random selection
 
 ```ts
 const randomSelection = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -77,7 +77,7 @@ const filterNonUnique = (arr) =>
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
 
-## Get list of elements that exists in both arrays `@arrays`
+## Get list of elements that exists in both arrays
 
 ```ts
 const similarity = (a, b) => a.filter((v) => b.includes(v));
@@ -106,7 +106,7 @@ const takeRight = (arr, n = 1) => arr.slice(arr.length - n, arr.length);
 // takeRight([1, 2, 3]); // [3]
 ```
 
-## Returns every element that exists in any of the two arrays once.
+## Returns every element that exists in any of the two arrays once
 
 Create a `Set` with all values of `a` and `b` and convert to an array.
 

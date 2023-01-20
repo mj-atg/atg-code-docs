@@ -1,6 +1,6 @@
 # ES6 - ByteSize Scripts - Date
 
-## Check if its valid date
+## Check if date is valid
 
 ```ts
 /**
