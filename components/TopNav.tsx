@@ -4,7 +4,7 @@ import Link from 'next/link';
 export function TopNav({children}) {
   return (
     <nav>
-      <img src="/images/ATG-Logo-Red-low-res.jpeg" width="120" />
+      <Link href="/"><img src="/images/ATG-Logo-Red-low-res.jpeg" width="120" /></Link>
       <section>{children}</section>
       <style jsx>
         {`
