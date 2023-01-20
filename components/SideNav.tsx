@@ -21,8 +21,8 @@ const items = [
         {href: '/docs/code/quality/variable-naming', children: 'Variable Naming'},
       ]},
       {href: '/docs/code/typescript', children: 'Typescript', sub: [
-        {href: '/docs/code/quality/utility-types', children: 'Utility Types'},
-        {href: '/docs/code/quality/additional-resources', children: 'Additional Resources'},
+        {href: '/docs/code/typescript/utility-types', children: 'Utility Types'},
+        {href: '/docs/code/typescript/additional-resources', children: 'Additional Resources'},
       ]}
     ],
   },
