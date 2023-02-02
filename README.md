@@ -2,7 +2,7 @@
 
 Forked from [https://github.com/markdoc/markdoc-starter](https://github.com/markdoc/markdoc-starter)
 
-## Setup
+## To Setup
 
 First, clone this repo and install the dependencies required:
 
